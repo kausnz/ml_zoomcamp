@@ -27,15 +27,13 @@ median_engine_cylinders_after = df['Engine Cylinders'].median()
 print(df.columns[df.isnull().any().to_list()])
 print("Median before = {}, median after = {}".format(median_engine_cylinders, median_engine_cylinders_after))
 
-# Question 7 (incomplete)
+# Question 7
 lotus_cars = df[df['Make'] == 'Lotus']
+lotus_cars.shape
 X = lotus_cars[['Engine HP', 'Engine Cylinders']].drop_duplicates().to_numpy()
 Xt = X.transpose()
-print(Xt)
-XTX = Xt @ X
+XTX = Xt.dot(X)
 XTX_inv = np.linalg.inv(XTX)
-print(XTX_inv)
 y = np.array([1100, 800, 750, 850, 1300, 1000, 1000, 1300, 800])
-
-# result = y.dot(Xt.dot(XTX_inv))
-print(result)
+w = XTX_inv.dot(Xt).dot(y)
+print(w[0].round(4))

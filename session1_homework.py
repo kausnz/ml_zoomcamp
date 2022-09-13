@@ -20,11 +20,11 @@ print(df.columns[df.isnull().any().to_list()])
 
 # Question 6
 median_engine_cylinders = df['Engine Cylinders'].median()
+median_engine_cylinders #6.0
 mode_engine_cylinders = df['Engine Cylinders'].mode()
-print(mode_engine_cylinders)
-df['Engine Cylinders'].fillna(mode_engine_cylinders, inplace=True)
+mode_engine_cylinders # 4.0
+df['Engine Cylinders'] = df['Engine Cylinders'].fillna(mode_engine_cylinders)
 median_engine_cylinders_after = df['Engine Cylinders'].median()
-print(df.columns[df.isnull().any().to_list()])
 print("Median before = {}, median after = {}".format(median_engine_cylinders, median_engine_cylinders_after))
 
 # Question 7

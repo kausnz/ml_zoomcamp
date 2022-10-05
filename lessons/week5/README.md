@@ -1,5 +1,3 @@
-## gunicorn
-
 ## Running on a production-ready wsgi (Web Server Gateway Interface) server
 
 Out flask app can run on gunicorn as below:
@@ -14,3 +12,11 @@ pip install waitress
 waitress-serve --listen=0.0.0.0:9696 predict:app
 ```
 
+## Pipenv
+
+E.g.
+
+`pipenv install numpy scikit-learn flask`
+
+To activate this project's virtualenv, run `pipenv shell`.
+Alternatively, run a command inside the virtualenv with `pipenv run`.

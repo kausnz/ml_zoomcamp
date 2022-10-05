@@ -26,5 +26,5 @@ The anyone who checkout the code with those files in the dir can just run `pipen
 
 To exit a pipenv, press CTRL + D
 
-pienv is only for isolating python dependencies. If your python program requires a dependency then we have to use docker.
+pipenv is only for isolating python dependencies. If your python program requires a dependency then we have to use docker.
 

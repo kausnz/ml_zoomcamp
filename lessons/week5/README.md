@@ -20,3 +20,6 @@ E.g.
 
 To activate this project's virtualenv, run `pipenv shell`.
 Alternatively, run a command inside the virtualenv with `pipenv run`.
+
+Generates two files viz Pipfile, Pipfile.lock
+The anyone who checkout the code with those files in the dir can just run `pipenv install` to setup the environment.

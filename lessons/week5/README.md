@@ -37,3 +37,16 @@ Build the Dockerfile
 Run the container
 
 `docker run -it --rm -p 9696:9696 zoomcamp-test`
+
+
+## AWS Elastic Beanstalk
+
+`pipenv install awsebcli --dev`
+
+`eb init -p docker -r ap-southeast-2 churn-serving`
+
+`eb local run --port 9696`
+
+`eb create churn-serving-env`
+
+`eb terminate churn-serving-env`

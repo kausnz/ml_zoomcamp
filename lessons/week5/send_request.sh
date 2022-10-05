@@ -1,5 +1,7 @@
-curl -X POST http://localhost:9696/predict -H 'Content-Type: application/json' -d '{ 
-"tenure": 1,
+host='churn-serving-env.eba-u6mp3jek.ap-southeast-2.elasticbeanstalk.com'
+
+curl -v -X POST http://${host}/predict -H 'Content-Type: application/json' -d '{ 
+"tenure": 12,
 "monthlycharges": 29.85,
 "totalcharges": 29.85,
 "gender": "female",

@@ -23,3 +23,8 @@ Alternatively, run a command inside the virtualenv with `pipenv run`.
 
 Generates two files viz Pipfile, Pipfile.lock
 The anyone who checkout the code with those files in the dir can just run `pipenv install` to setup the environment.
+
+To exit a pipenv, press CTRL + D
+
+pienv is only for isolating python dependencies. If your python program requires a dependency then we have to use docker.
+

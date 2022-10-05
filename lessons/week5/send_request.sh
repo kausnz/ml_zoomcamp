@@ -1,6 +1,4 @@
-curl -X POST http://localhost:9696/predict
-   -H 'Content-Type: application/json'
-   -d '{ 
+curl -X POST http://localhost:9696/predict -H 'Content-Type: application/json' -d '{ 
 "tenure": 1,
 "monthlycharges": 29.85,
 "totalcharges": 29.85,

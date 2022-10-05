@@ -28,3 +28,12 @@ To exit a pipenv, press CTRL + D
 
 pipenv is only for isolating python dependencies. If your python program requires a dependency then we have to use docker.
 
+## Dockerize the app
+
+Build the Dockerfile
+
+`docker build -t zoomcamp-test .`
+
+Run the container
+
+`docker run -it --rm -p 9696:9696 zoomcamp-test`

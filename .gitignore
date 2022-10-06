@@ -1,2 +1,4 @@
-**/*.bin
+# commented out as there are model .bin files downloaded for homework
+#**/*.bin
 **/__pycache__/
+ml_zoomcamp.code-workspace

@@ -1,0 +1,10 @@
+service: "service.py:cred_risk_svc"
+labels:
+  owner: Kaush
+  project: mlz
+include:
+  - "*.py"
+python:
+  packages:
+    - xgboost
+    - sklearn

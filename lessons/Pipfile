@@ -11,6 +11,7 @@ numpy = "*"
 jupyter = "*"
 matplotlib = "*"
 xgboost = "*"
+bentoml = "*"
 
 [dev-packages]
 

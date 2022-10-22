@@ -12,6 +12,9 @@ jupyter = "*"
 matplotlib = "*"
 xgboost = "*"
 bentoml = "*"
+pydantic = "*"
+locust = "*"
+requests = "*"
 
 [dev-packages]
 
